@@ -2,7 +2,7 @@
 
 const TelegramNodeBot = require('telegram-node-bot')
 const telegram = new TelegramNodeBot.Telegram(process.env.TELEGRAM_TOKEN)
-const source = require('quotes.json')
+const source = require('./quotes.json')
 
 class QuotesController extends TelegramNodeBot.TelegramBaseController {
     /**
